@@ -1,0 +1,23 @@
+
+@property(nonatomic,strong)UILabel* mTitleLabel;
+self.mTitleLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        _mTitleLabel.font = [UIFont systemFontOfSize:14];
+        _mTitleLabel.textColor = K_COLOR_C3;
+        _mTitleLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_mTitleLabel];
+
+@property(nonatomic,strong)AlignmentLabel* mInfoLabel;
+self.mInfoLabel = [[AlignmentLabel alloc]initWithFrame:CGRectZero];
+        _mInfoLabel.backgroundColor = [UIColor clearColor];
+        _mInfoLabel.font = [UIFont systemFontOfSize:14];
+        _mInfoLabel.textColor = K_COLOR_C1;
+        _mInfoLabel.textAlignment = NSTextAlignmentLeft;
+        _mInfoLabel.text = @"";
+        _mInfoLabel.mVerticalAlignment = UILabelVerticalAlignmentMiddle;
+        _mInfoLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        _mInfoLabel.numberOfLines = 0;
+        [self addSubview:_mInfoLabel];
+
+[_mInfoLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo( [info heightWithFont:_mInfoLabel.font constrainedToWidth:SCREENWIDTH-70]);
+    }];

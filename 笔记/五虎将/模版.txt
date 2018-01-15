@@ -1,0 +1,155 @@
+//
+//  AGOpenCarView.m
+//  AmpGO
+//
+//  Created by zc on 2017/12/26.
+//  Copyright © 2017年 陈建全. All rights reserved.
+//
+
+#import "AGOpenCarView.h"
+#import <Masonry.h>
+
+@interface AGOpenCarView()
+@property(nonatomic,strong)UILabel* mTitleLabel;
+@property(nonatomic,strong)UILabel* mNumberLabel;
+@property(nonatomic,strong)UIImageView* mImageView;
+@property(nonatomic,strong)UIImageView* mRemainingImageView;
+@property(nonatomic,strong)UILabel* mRemainingMileageLabel;
+@property(nonatomic,strong)UILabel* mRemainingMileageUnitLabel;
+@property(nonatomic,strong)UIView* mOpenDoorView;
+@property(nonatomic,strong)UILabel* mOpenDoorLabel;
+@property(nonatomic,strong)UILabel* mPriceUnitLabel;
+@property(nonatomic,strong)UILabel* mPriceLabel;
+@property(nonatomic,strong)UILabel* mEndLabel;
+@end
+
+@implementation AGOpenCarView
+
+-(instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = [UIColor redColor];
+        
+        
+        self.mTitleLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        _mTitleLabel.font = [UIFont systemFontOfSize:12];
+        _mTitleLabel.textColor = [UIColor blackColor];
+        _mTitleLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_mTitleLabel];
+        
+        self.mNumberLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        _mNumberLabel.font = [UIFont systemFontOfSize:12];
+        _mNumberLabel.textColor = [UIColor blackColor];
+        _mNumberLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_mNumberLabel];
+        
+        self.mImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+        _mImageView.contentMode = UIViewContentModeScaleAspectFit;
+        _mImageView.backgroundColor = [UIColor yellowColor];
+        [self addSubview:_mImageView];
+        
+        self.mRemainingImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+        _mRemainingImageView.contentMode = UIViewContentModeScaleAspectFit;
+        _mRemainingImageView.backgroundColor = [UIColor yellowColor];
+        [self addSubview:_mRemainingImageView];
+        
+        self.mRemainingMileageLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        _mRemainingMileageLabel.font = [UIFont systemFontOfSize:12];
+        _mRemainingMileageLabel.textColor = [UIColor blackColor];
+        _mRemainingMileageLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_mRemainingMileageLabel];
+        
+        self.mRemainingMileageUnitLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        _mRemainingMileageUnitLabel.font = [UIFont systemFontOfSize:12];
+        _mRemainingMileageUnitLabel.textColor = [UIColor blackColor];
+        _mRemainingMileageUnitLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_mRemainingMileageUnitLabel];
+        
+        self.mOpenDoorView = [[UIView alloc]initWithFrame:CGRectZero];
+        _mOpenDoorView.backgroundColor = [UIColor grayColor];
+        [self addSubview:_mOpenDoorView];
+        
+        self.mOpenDoorLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        _mOpenDoorLabel.font = [UIFont systemFontOfSize:12];
+        _mOpenDoorLabel.textColor = [UIColor blackColor];
+        _mOpenDoorLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_mOpenDoorLabel];
+        
+        self.mPriceUnitLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        _mPriceUnitLabel.font = [UIFont systemFontOfSize:12];
+        _mPriceUnitLabel.textColor = [UIColor blackColor];
+        _mPriceUnitLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_mPriceUnitLabel];
+        
+        self.mPriceLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        _mPriceLabel.font = [UIFont systemFontOfSize:12];
+        _mPriceLabel.textColor = [UIColor blackColor];
+        _mPriceLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_mPriceLabel];
+        
+        self.mEndLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        _mEndLabel.font = [UIFont systemFontOfSize:12];
+        _mEndLabel.textColor = [UIColor blackColor];
+        _mEndLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_mEndLabel];
+        
+        [self layoutFrame];
+    }
+    return self;
+}
+
+-(void)layoutFrame
+{
+    [_mTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [_mNumberLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [_mImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [_mRemainingImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [_mRemainingMileageLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [_mRemainingMileageUnitLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [_mOpenDoorView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [_mOpenDoorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [_mPriceUnitLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [_mPriceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [_mEndLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+}
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+
+@end

@@ -1,0 +1,6 @@
+@property(nonatomic,strong)UIImageView* mImageView;
+
+self.mImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+        _mImageView.image = [UIImage imageNamed:@"AMMallBundle.bundle/mall_serviceIcon@2x.jpg"];
+        _mImageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:_mImageView];
