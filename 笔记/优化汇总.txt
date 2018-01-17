@@ -114,3 +114,9 @@ app代码方面，建议使用主分支和开发分枝两个分支。
 24,不支持post
 
 25,jira平台，不支持bug解决分类（by design/fix,dumplicate,delay,not reproduced）,不支持版本号
+
+26,gerrit代码审核
+
+27，静态代码检查
+
+28,持续集成，jenkins
