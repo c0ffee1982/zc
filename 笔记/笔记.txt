@@ -132,3 +132,5 @@ amend (删除changeid)
 https://github.com/czhen09/ESJsonFormatForMac
 
 27,后台管理配置文件，例如数据库密码，环境相关配置信息，用zookeeper平台。
+
+28,ios借鉴spring的依赖注入
