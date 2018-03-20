@@ -145,3 +145,5 @@ https://github.com/czhen09/ESJsonFormatForMac
 30，架构分层：
 1，单向依赖。
 2，逐层依赖。
+
+31,MVC/MVP模版创建
