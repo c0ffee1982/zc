@@ -146,5 +146,10 @@ https://github.com/czhen09/ESJsonFormatForMac
 1，单向依赖。
 2，逐层依赖。
 
-31,git连接不上，ssh私钥重置
+31,MVC/MVP模版创建
+
+32,git连接不上，ssh私钥重置
 删除.ssh文件夹下的known_hosts
+
+
+
