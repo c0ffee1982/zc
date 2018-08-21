@@ -151,5 +151,6 @@ https://github.com/czhen09/ESJsonFormatForMac
 32,git连接不上，ssh私钥重置
 删除.ssh文件夹下的known_hosts
 
-
+33,masonry
+mas_updateConstraints不能更改参考对象，如需要，请使用mas_remakeConstraints
 
