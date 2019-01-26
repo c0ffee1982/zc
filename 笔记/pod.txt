@@ -1,7 +1,0 @@
-从国内镜像安装
-cd  ~/.cocoapods/repos
-git clone https://gitclub.cn/CocoaPods/Specs.git master
-
-pod install --verbose --no-repo-update 
-pod update --verbose --no-repo-update
-
